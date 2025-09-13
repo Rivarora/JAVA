@@ -1,0 +1,42 @@
+<!-- Easy (2 marks)
+
+Q: List two features of Java that make it suitable for cross-platform development.
+Ans:
+
+Java programs run on the JVM (Java Virtual Machine), making them platform-independent.
+
+Java follows the “Write Once, Run Anywhere (WORA)” principle.
+
+Medium (4 marks)
+
+Q: How does Java protect programmers from memory management mistakes common in C++?
+Ans:
+In C++, programmers must manually allocate (new) and free (delete) memory, which often causes memory leaks or crashes.
+Java avoids this by using Garbage Collection, which automatically frees unused memory. This ensures programmers don’t have to manually manage memory, reducing errors.
+
+Hard (6 marks)
+
+Q: Suppose you're teaching a group of new programmers. Explain why Java’s “automatic memory management” and “bounds checking” can prevent common beginner bugs.
+Ans:
+
+Automatic Memory Management (Garbage Collection): Beginners don’t have to remember to free memory like in C++. Java automatically cleans up unused objects, so programs don’t crash due to memory leaks.
+
+Bounds Checking: If a student writes arr[10] in an array of size 5, Java throws an error immediately (ArrayIndexOutOfBoundsException). In C++, this might silently overwrite memory, causing hard-to-find bugs.
+
+Hard Activity (8 marks)
+
+Q: Choose any two drawbacks of C++ from the table above (such as build complexity and pointer errors). For each, describe how Java’s approach makes learning and team programming easier. Support your answer with simple examples.
+
+Ans:
+
+Pointer Errors in C++:
+
+In C++, using uninitialized or dangling pointers (int* p; *p = 5;) can crash a program.
+
+In Java, there are no raw pointers. Instead, references are safe and checked by the JVM. If a variable isn’t pointing anywhere, Java throws a clear NullPointerException instead of corrupting memory.
+
+Build Complexity in C++:
+
+C++ requires separate header files, linking, and recompilation, which can confuse beginners.
+
+Java uses a single .java file per class and compiles directly to bytecode with javac. This makes the build process simpler and easier for teamwork. -->
